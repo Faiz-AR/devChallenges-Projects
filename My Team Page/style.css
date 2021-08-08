@@ -1,0 +1,121 @@
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;
+
+*/
+
+/* REUSEABLE COMPONENETS */
+
+:root {
+  --white-bg-color: #fafafa;
+  --black-main-color: #000000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--white-bg-color);
+  font-family: "Poppins", sans-serif;
+  color: var(--black-main-color);
+  line-height: 1;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 7rem 1.2rem;
+}
+
+/* HEADING SECTION */
+
+.heading-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3.8rem;
+}
+
+.heading-title {
+  font-family: "PT Serif", serif;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 4.6rem;
+}
+
+.content-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.content-para {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  width: 33rem;
+  margin-bottom: 6.4rem;
+}
+
+/* TEAM SECTION */
+
+.team-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 28rem);
+  column-gap: 2.6rem;
+  align-items: start;
+}
+
+.card {
+  position: relative;
+}
+
+.team-img {
+  width: 13.8rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.team-job {
+  display: inline-block;
+  position: absolute;
+  top: 60px;
+  right: -52px;
+  transform: rotate(90deg);
+
+  font-family: "PT Serif", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  text-transform: uppercase;
+  width: 13rem;
+}
+
+.team-name {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+}
+
+.card-end {
+  align-self: end;
+}
