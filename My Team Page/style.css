@@ -15,6 +15,7 @@ font-family: 'PT Serif', serif;
 :root {
   --white-bg-color: #fafafa;
   --black-main-color: #000000;
+  --footer-color: #a9a9a9;
 }
 
 * {
@@ -38,6 +39,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   padding: 7rem 1.2rem;
+  justify-items: center;
 }
 
 /* HEADING SECTION */
@@ -76,11 +78,13 @@ body {
 /* TEAM SECTION */
 
 .team-section {
+  max-width: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 28rem);
   column-gap: 2.6rem;
   align-items: start;
+  margin-bottom: 13.4rem;
 }
 
 .card {
@@ -97,7 +101,7 @@ body {
   display: inline-block;
   position: absolute;
   top: 60px;
-  right: -52px;
+  left: 82px;
   transform: rotate(90deg);
 
   font-family: "PT Serif", serif;
@@ -109,7 +113,7 @@ body {
 }
 
 .team-name {
-  display: inline-block;
+  display: block;
   font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
@@ -118,4 +122,91 @@ body {
 
 .card-end {
   align-self: end;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.4rem;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+  color: var(--footer-color);
+}
+
+.footer-name {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer a {
+  color: var(--footer-color);
+  cursor: pointer;
+}
+/* 720 PX */
+@media (min-width: 45em) {
+  .content-para {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+
+  .team-section {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 28rem);
+    column-gap: 3.2rem;
+    row-gap: 3.2rem;
+  }
+  .team-img {
+    margin-bottom: 1.5rem;
+  }
+
+  .team-job {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .team-name {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+
+  .card-adjust-start {
+    align-self: start;
+  }
+
+  .card-adjust-end {
+    align-self: end;
+  }
+}
+
+/* 920px */
+@media (min-width: 58em) {
+  .heading-section {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .team-section {
+    grid-template-rows: repeat(2, 46.2rem);
+    column-gap: 6.7rem;
+    margin-bottom: 11.5rem;
+  }
+
+  .team-img {
+    width: 23.8rem;
+    height: auto;
+  }
+  .team-job {
+    top: 60px;
+    left: 190px;
+  }
+}
+
+/* 1120px */
+@media (min-width: 70em) {
+  .heading-section {
+    column-gap: 21.5rem;
+  }
 }
