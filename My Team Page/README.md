@@ -7,8 +7,7 @@
 </div>
 
 <div align="center">
-  <h3>
-    
+  <h3>    
     <a href="https://faiz-my-team-page.netlify.app/">
       My Solution
     </a>
