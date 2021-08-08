@@ -99,13 +99,14 @@ body {
   background-color: var(--grey-2-active--color);
 }
 
-footer {
-  grid-column: 1/-1;
+.footer {
+  display: flex;
+  justify-content: center;
   margin-bottom: 2.4rem;
-  text-align: center;
+
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
   font-size: 1.4rem;
+  font-weight: 500;
   line-height: 1.7rem;
   color: var(--grey-3-color);
 }
@@ -115,6 +116,10 @@ footer {
   text-decoration: underline;
 }
 
+.footer a {
+  color: var(--grey-3-color);
+  cursor: pointer;
+}
 @media (max-width: 74em) {
   .scarecrow-img {
     width: 36rem;
