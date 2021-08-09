@@ -38,14 +38,6 @@ body {
   line-height: 1;
 }
 
-.material-icons.md-18 {
-  font-size: 18px;
-}
-
-.material-icons.md-28 {
-  font-size: 28px;
-}
-
 /* MAIN CSS */
 .container {
   display: grid;
@@ -70,7 +62,58 @@ body {
   border: 1px solid var(--white-main-color);
 }
 
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8.6rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--white-main-color);
+  padding: 0.8em;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  border-bottom: 1px solid var(--white-main-color);
+}
+
+.main-nav {
+  display: none;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: block;
+  z-index: 9999;
+}
+
+.icon-mobile-nav {
+  height: 2.8rem;
+  width: 2.8rem;
+  color: var(--white-icon-color);
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /* CONTENT MAIN SECTION */
+
+.content {
+  display: grid;
+  justify-content: center;
+}
 
 .content-main {
   display: grid;
@@ -117,7 +160,7 @@ body {
 }
 
 .content-img {
-  width: 35.1rem;
+  width: 90vw;
   height: auto;
 }
 
@@ -169,7 +212,7 @@ body {
 .pub-content {
   max-width: 21rem;
   font-family: "Lora", serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.8rem;
   line-height: 2.3rem;
 }

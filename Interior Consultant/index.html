@@ -15,6 +15,16 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css">
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule=""
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+  ></script>
+    <script src="script.js"></script>
     <title>Interior Consultant Challenge</title>
   </head>
   <body>
@@ -24,13 +34,26 @@
         <div>
           <h1 class="heading-title">This Interior</h1>
         </div>
-        <div class="heading-hamburger">
-          <span class="material-icons md-28"> menu </span>
-        </div>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#">Home</a></li>
+            <li><a class="main-nav-link" href="#">Collection</a></li>
+            <li>
+              <a class="main-nav-link" href="#">About</a>
+            </li>
+            <li><a class="main-nav-link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
       </div>
 
       <!-- CONTENT SECTION -->
       <div class="content">
+
+        <!-- MAIN CONTENT -->
         <div class="content-main">
           <h2 class="content-title">Modern interior</h2>
           <p class="content-para">
@@ -42,6 +65,8 @@
             <span class="material-icons md.18"> trending_flat </span>
           </div>
         </div>
+
+        <!-- SECONDARY CONTENT -->
         <div class="content-secondary">
           <img class="content-img" src="./img/photo1.png" alt="" />
           <div class="overlap">

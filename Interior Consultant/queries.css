@@ -1,0 +1,106 @@
+/* 460px */
+@media (min-width: 29em) {
+  .content-img {
+    width: 41.4rem;
+  }
+}
+
+/* 880px */
+@media (min-width: 55em) {
+  .container {
+    padding: 2.2rem 2.7rem;
+  }
+
+  .main-nav {
+    display: block;
+  }
+
+  .btn-mobile-nav {
+    display: none;
+  }
+  .content-main {
+    row-gap: 4rem;
+  }
+  .content-title {
+    font-size: 3.2rem;
+    line-height: 6.2rem;
+  }
+
+  .content-para {
+    max-width: 41rem;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+  }
+
+  .readmore-btn {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  .overlap {
+    width: 41rem;
+    padding: 1.8rem 3.1rem;
+  }
+
+  .content-img {
+    width: 60vw;
+  }
+
+  .author-details-container {
+    column-gap: 1.9rem;
+    margin-bottom: 3rem;
+  }
+
+  .author-img {
+    width: 5rem;
+  }
+
+  .author-name {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .author-job {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+
+  .pub-content {
+    max-width: 29rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+}
+/* 1080px */
+@media (min-width: 67em) {
+  .container {
+    padding: 4.2rem 7.7rem;
+    row-gap: 18rem;
+  }
+
+  .content {
+    grid-template-columns: 4fr 6fr;
+    column-gap: 18.4rem;
+  }
+
+  .content-title {
+    font-size: 4.8rem;
+    line-height: 6.2rem;
+    width: 36.5rem;
+  }
+
+  .content-para {
+    width: 41rem;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+  .readmore-btn {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .content-img {
+    width: 57rem;
+  }
+}
