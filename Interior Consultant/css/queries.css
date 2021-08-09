@@ -78,6 +78,7 @@
 @media (min-width: 59em) {
   .container {
     row-gap: 7.8rem;
+    padding: 4.2rem 7.7rem;
   }
 
   .content-main {
