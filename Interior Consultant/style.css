@@ -29,6 +29,7 @@ font-family: 'Montserrat', sans-serif;
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -36,20 +37,24 @@ body {
   font-family: "Montserrat", serif;
   color: var(--white-main-color);
   line-height: 1;
+  overflow-x: hidden;
 }
 
 /* MAIN CSS */
 .container {
   display: grid;
   padding: 2rem 1.2rem;
+  row-gap: 3.8rem;
 }
 
 /* HEADING SECTION */
-.heading {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3.8rem;
+  background-color: var(--black-bg-color);
+
+  position: relative;
 }
 
 .heading-title {
@@ -62,6 +67,10 @@ body {
   border: 1px solid var(--white-main-color);
 }
 
+/**************************/
+/* NAVIGATION */
+/**************************/
+
 .main-nav-list {
   list-style: none;
   display: flex;
@@ -73,34 +82,31 @@ body {
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: var(--white-main-color);
-  padding: 0.8em;
-  font-weight: 700;
-  font-size: 1.4rem;
-  line-height: 2.2rem;
+  color: var(--white-icon-color);
+  font-weight: 500;
+  font-size: 1.8rem;
   transition: all 0.3s;
+  padding: 0.8rem;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
+  font-family: 700;
   border-bottom: 1px solid var(--white-main-color);
 }
 
-.main-nav {
-  display: none;
-}
-
+/* MOBILE */
 .btn-mobile-nav {
   border: none;
   background: none;
   cursor: pointer;
-  display: block;
-  z-index: 9999;
+
+  display: none;
 }
 
 .icon-mobile-nav {
-  height: 2.8rem;
-  width: 2.8rem;
+  height: 4.8rem;
+  width: 4.8rem;
   color: var(--white-icon-color);
 }
 
@@ -119,6 +125,7 @@ body {
   display: grid;
   row-gap: 2.5rem;
   margin-bottom: 3.7rem;
+  justify-self: center;
 }
 
 .content-title {
@@ -165,7 +172,7 @@ body {
 }
 
 .overlap {
-  width: 30rem;
+  width: 70vw;
   position: absolute;
   padding: 1.3rem 2.3rem;
   bottom: -80px;
