@@ -87,6 +87,7 @@ body {
   font-size: 1.8rem;
   transition: all 0.3s;
   padding: 0.8rem;
+  margin-bottom: -5px;
 }
 
 .main-nav-link:hover,
