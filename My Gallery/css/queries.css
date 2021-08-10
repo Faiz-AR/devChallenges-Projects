@@ -1,0 +1,84 @@
+/* 375px */
+@media (max-width: 23.5em) {
+  .img-sm {
+    width: 11rem;
+  }
+
+  .img-md-x {
+    width: 23rem;
+  }
+
+  .img-md-y {
+    width: 10.8rem;
+  }
+}
+
+/*768px  */
+@media (min-width: 48em) {
+  .container {
+    padding: 6rem 10vw;
+  }
+
+  .profile-img {
+    width: 15.6rem;
+  }
+
+  .profile-name {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+
+  .profile-address {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+
+  .box {
+    margin-left: 2.4rem;
+    width: 10rem;
+    height: 6.7rem;
+  }
+
+  .box-primary {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .box-secondary {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+}
+
+/* 945px */
+@media (min-width: 59em) {
+  .container {
+    padding: 6rem 1.2rem;
+  }
+  .content-section {
+    gap: 1.2rem;
+  }
+  .img-sm {
+    width: 30rem;
+  }
+  .img-md-y {
+    width: 29.7rem;
+  }
+}
+
+/* 975px */
+@media (min-width: 61em) {
+  .container {
+    width: 96.2rem;
+    margin: 0 auto;
+  }
+
+  .content-section {
+    grid-template-columns: repeat(3, 30rem);
+    grid-template-rows: repeat(3, 30rem);
+    gap: 3.2rem;
+  }
+  .img-md-x {
+    width: 63rem;
+  }
+}
