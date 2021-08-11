@@ -11,7 +11,7 @@
 ## Completed Challenges
 
 ### Responsive Web Developer
-- Checkout Page: [Solution](https://faiz-404-not-found.netlify.app/)
+- Checkout Page: [Solution](https://faiz-checkout-page.netlify.app/)
 - Interior Consultant Page: [Solution](https://faiz-interior-consultant.netlify.app/)
 - My Gallery Page: [Solution](https://faiz-my-gallery.netlify.app/)
 - My Team Page: [Solution](https://faiz-my-team-page.netlify.app/)
