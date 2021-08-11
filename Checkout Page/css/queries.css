@@ -81,6 +81,11 @@
     font-size: 1.6rem;
   }
 
+  .select-field {
+    padding: 1.7rem 5.2rem;
+    font-size: 1.6rem;
+  }
+
   ::placeholder {
     font-size: 1.6rem;
   }
@@ -88,6 +93,13 @@
   .input-icon {
     top: 36px;
     left: 14px;
+  }
+
+  .arrow {
+    top: 39px;
+    right: 12px;
+    height: 2rem;
+    width: 2rem;
   }
 }
 
