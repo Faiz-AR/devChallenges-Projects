@@ -60,11 +60,11 @@
                 ><span class="product-ori-price">$94.99</span>
               </p>
               <div class="product-quantity-box">
-                <button class="btn-quantity" id="decrease">
+                <button class="btn-quantity btn-dec" id="decrease">
                   <ion-icon name="remove"></ion-icon>
                 </button>
                 <span class="product-quantity">1</span>
-                <button class="btn-quantity" id="increase">
+                <button class="btn-quantity btn-inc" id="increase">
                   <ion-icon name="add"></ion-icon>
                 </button>
               </div>
@@ -89,11 +89,11 @@
                 ><span class="product-ori-price">$124.99</span>
               </p>
               <div class="product-quantity-box">
-                <button class="btn-quantity" id="decrease">
+                <button class="btn-quantity btn-dec" id="decrease">
                   <ion-icon name="remove"></ion-icon>
                 </button>
                 <span class="product-quantity">1</span>
-                <button class="btn-quantity" id="increase">
+                <button class="btn-quantity btn-inc" id="increase">
                   <ion-icon name="add"></ion-icon>
                 </button>
               </div>
@@ -121,7 +121,7 @@
         <!-- CONATCT INFO BOX -->
         <div class="info-box">
           <h3 class="input-title">Contact information</h3>
-          <form class="form" action="POST">
+          <form class="form" method="GET">
             <!-- EMAIL INPUT -->
             <div class="input-box">
               <p class="input-label">E-mail</p>
@@ -131,8 +131,11 @@
               <input
                 class="input-field"
                 type="email"
+                required
                 placeholder="Enter your email..."
                 name="email"
+                oninvalid="this.setCustomValidity('Enter User Name Here')"
+                oninput="this.setCustomValidity('')" 
               />
             </div>
 
@@ -235,9 +238,9 @@
               <label class="input-label m-0">Save this information for next time</label>
             </div>
           </div>
+          <input class="continue-btn" type="submit" value="Continue">
           </form>
         </div>
-        <a class="continue-btn"href="#">Continue</a>
       </section>
     </main>
     

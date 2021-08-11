@@ -179,8 +179,14 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
-.btn-quantity:hover {
-  background-color: #b3b3b3;
+.btn-inc:hover {
+  background-color: lightgreen;
+  color: var(--white-bg-color);
+}
+
+.btn-dec:hover {
+  background-color: #ff7f7f;
+  color: var(--white-bg-color);
 }
 
 .btn-quantity:hover > ion-icon {
@@ -300,16 +306,21 @@ select {
 
 .continue-btn {
   justify-self: end;
-  font-size: 1.6rem;
-  line-height: 1.9rem;
   padding: 1.7rem 4.5rem;
   border-radius: 12px;
   border: none;
   background-color: var(--orange1-text-color);
-  color: var(--white-bg-color);
-  text-decoration: none;
   width: 16rem;
   transition: all 0.3s;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: var(--white-bg-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
 .continue-btn:hover {
