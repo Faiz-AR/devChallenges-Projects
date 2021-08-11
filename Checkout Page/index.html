@@ -60,11 +60,11 @@
                 ><span class="product-ori-price">$94.99</span>
               </p>
               <div class="product-quantity-box">
-                <button class="btn-quantity">
+                <button class="btn-quantity" id="decrease">
                   <ion-icon name="remove"></ion-icon>
                 </button>
                 <span class="product-quantity">1</span>
-                <button class="btn-quantity">
+                <button class="btn-quantity" id="increase">
                   <ion-icon name="add"></ion-icon>
                 </button>
               </div>
@@ -89,11 +89,11 @@
                 ><span class="product-ori-price">$124.99</span>
               </p>
               <div class="product-quantity-box">
-                <button class="btn-quantity">
+                <button class="btn-quantity" id="decrease">
                   <ion-icon name="remove"></ion-icon>
                 </button>
                 <span class="product-quantity">1</span>
-                <button class="btn-quantity">
+                <button class="btn-quantity" id="increase">
                   <ion-icon name="add"></ion-icon>
                 </button>
               </div>
@@ -203,10 +203,12 @@
 
                 <ion-icon class="input-icon" name="earth"></ion-icon>
 
+                <!-- COUNTRY INPUT -->
                 <input
                   class="input-field"
                   type="text"
-                  placeholder="Country..."
+                  name="country"
+                  placeholder="Your country..."
                 />
               </div>
 
@@ -219,7 +221,8 @@
                 <input
                   class="input-field"
                   type="text"
-                  placeholder="Postal code..."
+                  name="zip"
+                  placeholder="Your postal code..."
                 />
               </div>
             </div>

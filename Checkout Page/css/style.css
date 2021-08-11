@@ -62,6 +62,7 @@ body::-webkit-scrollbar {
   font-size: 1.2rem;
   color: var(--grey3-text-color);
 }
+
 .mb-sm {
   margin-bottom: 2rem !important;
 }
@@ -101,6 +102,7 @@ body::-webkit-scrollbar {
 .content-section {
   display: grid;
   grid-template-columns: 1fr;
+  justify-self: center;
 }
 
 /* ORDER SUMMARY CONTAINER */
@@ -253,6 +255,9 @@ body::-webkit-scrollbar {
   border: 1px solid var(--grey3-text-color);
   outline: none;
   margin-bottom: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: var(--grey2-text-color);
 }
 
 .input-box-flex {
@@ -282,6 +287,7 @@ body::-webkit-scrollbar {
 .continue-btn:hover {
   background-color: #da8a43;
 }
+
 /* FOOTER SECTION */
 .footer {
   display: flex;
