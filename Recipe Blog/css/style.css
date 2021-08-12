@@ -60,12 +60,17 @@ body {
   color: var(--orange-text-color);
 }
 
+input[type="checkbox"] {
+  cursor: pointer;
+}
 /* MAIN CSS */
 
 .container {
+  max-width: 97rem;
   display: grid;
   grid-template-columns: 1fr;
-  padding: 3.2rem 1.1rem;
+  padding: 3.2rem 1.2rem;
+  margin: 0 auto;
 }
 
 /* HEADING SECTION */
@@ -96,7 +101,7 @@ body {
 
 .heading-content {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .dots-icon {
@@ -162,9 +167,14 @@ body {
 }
 
 /* RECIPE SECTION */
+
 .recipe-section {
+  display: grid;
+  grid-template-columns: 1fr;
   margin-bottom: 13rem;
 }
+
+/* INGREDIENTS CONTAINER */
 
 .title-tertiary {
   font-family: "Playfair Display", serif;
@@ -178,36 +188,105 @@ body {
 .ing-name {
   font-family: "Playfair Display", serif;
   font-size: 1.6rem;
-  font-weight: 400;
   line-height: 2.1rem;
   font-style: italic;
+  font-weight: 400;
 
   margin-bottom: 2.4rem;
 }
 
-.ing-box {
+.recipe-box {
   display: grid;
   grid-template-columns: auto 1fr;
+}
+
+.recipe-box.ing-box {
   column-gap: 0.8rem;
   row-gap: 0.3rem;
   align-items: baseline;
 }
 
 .ing-text {
-  grid-column: 2;
-
   font-size: 1.4rem;
   line-height: 2.5rem;
-  font-weight: 400;
 }
 
 .ing-box label:last-child {
-  margin-bottom: 4.2rem;
+  margin-bottom: 3rem;
 }
+
+/* INSTRUCTIONS CONTAINER */
 
 .title-secondary {
   font-family: "Playfair Display", serif;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 3.2rem;
+
+  margin-bottom: 2.6rem;
+}
+
+.recipe-box.ins-box {
+  column-gap: 1.5rem;
+  row-gap: 3rem;
+  align-items: flex-start;
+}
+
+.step-box {
+  display: flex;
+  place-content: center;
+
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+
+  color: var(--white-text-color);
+  background-color: var(--orange-text-color);
+
+  border-radius: 6px;
+  height: 3.6rem;
+  width: 3.6rem;
+}
+
+.ins-text {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--black-text-color);
+  align-self: flex-start;
+}
+
+.source-text {
+  grid-column: 1 / -1;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-style: italic;
+  color: var(--grey2-text-color);
+}
+
+.source-text a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* FOOTER SECTION */
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+  color: var(--footer-color);
+}
+
+.footer-name {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer a {
+  color: var(--footer-color);
+  cursor: pointer;
 }
