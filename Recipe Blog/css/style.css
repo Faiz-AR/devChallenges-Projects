@@ -1,0 +1,213 @@
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+
+*/
+
+/* REUSABLE CSS */
+
+:root {
+  /* BACKGROUND COLOR */
+  --white-bg-color: #fafafa;
+  --grey-bg-color: #c4c4c4;
+  --grey2-bg-color: #828282;
+
+  /* TEXT COLOR */
+  --black-text-color: #000000;
+  --grey-text-color: #4f4f4f;
+  --grey2-text-color: #bdbdbd;
+  --grey3-text-color: #333333;
+  --orange-text-color: #f2994a;
+  --white-text-color: #ffffff;
+
+  /* FOOTER COLOR */
+  --footer-color: #a9a9a9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--white-bg-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--grey3-text-color);
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.orange {
+  color: var(--orange-text-color);
+}
+
+/* MAIN CSS */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 3.2rem 1.1rem;
+}
+
+/* HEADING SECTION */
+
+.heading-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.heading-content-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.2rem;
+  column-gap: 2rem;
+}
+
+.title-primary {
+  grid-column: 1 / -1;
+
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  color: var(--black-text-color);
+}
+
+.heading-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.dots-icon {
+  margin-right: 1.2rem;
+}
+
+.heading-text {
+  max-width: 32rem;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.4rem;
+  color: var(--grey-text-color);
+}
+
+.heading-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* SUMMARY SECTION */
+.summary-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2.1rem;
+  margin-bottom: 3.1rem;
+}
+
+.sum-box {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.6rem;
+  align-items: center;
+}
+
+.sum-box.yields-box {
+  grid-column: 1 / -1;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1rem;
+  color: var(--grey2-text-color);
+  text-transform: uppercase;
+}
+
+.box-text {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+
+.box-text.special {
+  color: var(--orange-text-color);
+}
+
+/* RECIPE SECTION */
+.recipe-section {
+  margin-bottom: 13rem;
+}
+
+.title-tertiary {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+
+  margin-bottom: 1.4rem;
+}
+
+.ing-name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  font-style: italic;
+
+  margin-bottom: 2.4rem;
+}
+
+.ing-box {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.8rem;
+  row-gap: 0.3rem;
+  align-items: baseline;
+}
+
+.ing-text {
+  grid-column: 2;
+
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+}
+
+.ing-box label:last-child {
+  margin-bottom: 4.2rem;
+}
+
+.title-secondary {
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+}
