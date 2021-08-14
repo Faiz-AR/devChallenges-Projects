@@ -11,6 +11,7 @@
 ## Completed Challenges
 
 ### Responsive Web Developer
+- Recipe Blog: [Solution](https://faiz-recipe-blog.netlify.app/)
 - Checkout Page: [Solution](https://faiz-checkout-page.netlify.app/)
 - Interior Consultant Page: [Solution](https://faiz-interior-consultant.netlify.app/)
 - My Gallery Page: [Solution](https://faiz-my-gallery.netlify.app/)
