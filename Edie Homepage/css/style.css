@@ -1,0 +1,54 @@
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+
+*/
+
+/* REUSABLE CSS */
+
+:root {
+  /* BACKGROUND COLOR */
+  --white-bg-color: #ffffff;
+  --grey-bg-color: #e0e0e0;
+  --green-bg-color: #27ae60;
+  --red-bg-color: #eb5757;
+  --black-bg-color: #100e1d;
+
+  /* TEXT COLOR */
+  --grey1-text-color: #333333;
+  --grey2-text-color: #4f4f4f;
+  --grey3-text-color: #828282;
+  --grey4-text-color: #f2f2f2;
+  --grey5-text-color: #bdbdbd;
+  --black-text-color: #000000;
+  --blue-text-color: #2d9cdb;
+
+  /* FOOTER COLOR */
+  --footer-color: #a9a9a9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--white-bg-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--grey3-text-color);
+  overflow-x: hidden;
+}
