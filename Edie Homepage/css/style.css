@@ -5,8 +5,9 @@
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
+font-family: 'Heebo', sans-serif;
 font-family: 'Montserrat', sans-serif;
-font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
 
 */
 
@@ -46,9 +47,9 @@ html {
 
 body {
   background-color: var(--white-bg-color);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1;
-  color: var(--grey3-text-color);
+  color: var(--grey2-text-color);
   overflow-x: hidden;
 }
